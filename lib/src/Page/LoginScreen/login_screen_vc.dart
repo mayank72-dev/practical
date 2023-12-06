@@ -26,7 +26,7 @@ class LoginProviderScreen extends StatelessWidget {
             child: Column(crossAxisAlignment: CrossAxisAlignment.start,
               children:  [
                 Text(AppString.login),
-                Padding(padding:EdgeInsets.only(top: ScreenUtil().setHeight(10))),
+                Padding(padding:EdgeInsets.only(top: ScreenUtil().setHeight(15))),
                 Text(AppString.enterLogin),
                 customTextField(double.infinity, email, (value) => emailValidation(value), state.focusNode[0] ,  AppString.email,),
                 customTextField(double.infinity, password, (value) => passwordValidation(value), state.focusNode[1] , AppString.password,),
